@@ -127,7 +127,11 @@ Because there are certain hierachy with the columns, I encoded some of them manu
 
 # Improvement and reflections
 
-The accuracy of the model is bad. There are a few issues I encountered when cleaning and looking through the data. 
+The accuracy of the model is not good:
+
+![image](https://user-images.githubusercontent.com/107201347/216785821-e7f09aec-a73e-4d6f-a7ee-377cace1a1d7.png)
+
+There are a few issues I encountered when cleaning and looking through the data. 
 
 1. isnull() sometimes cannot detect the NaN in the dataset. I have to transform the column to another column to force the empty values into NaN.
 2. LabelEncoder() works by encoding categories based on the listed order. I used it for SOC codes and zip codes. This might not be ideal as the algoirthm might derive flase correlation between different data. One Hot encoder will not work well here either, becuase there are up to thousands of categories. 
@@ -141,16 +145,24 @@ I have the following proposal for improvements:
 2. Sort the SOC and the zip codes columns before encoding. If accuracy does not imrpove, use One Hot encoder.
 
 The improvement is still under work. It will be updated shortly.
+
 *update 2/4/2023
+
 I tried including 
    - FOREIGN_WORKER_REQ_EXPERIENCE (whether the foreign worker has the experience as required for the requested job opportunity)
    - MINIMUM_EDUCATION (The minimum U.S. diploma or degree required by the employer for the position)
    - REQUIRED_EXPERIENCE_MONTHS (If experience in the job offered is required, the number of months required)
+
 It produces higher errors:
+
 ![image](https://user-images.githubusercontent.com/107201347/216783398-525ec8ce-abdc-4ce3-a3a1-3f0ab195303d.png)
 
-However, including the 
+However, including the worksite city improves the accuracy a bit:
 
+![image](https://user-images.githubusercontent.com/107201347/216785781-d6a7f925-c5c2-4823-830c-989bb34f7361.png)
+
+The fundamental solution to this is to expand the input data. However, there are only limited permenant certification being processed by DOL a year.
+My next step is to see if I can incoorprate other foreign work certifications data in the same year, like working visa H1B. 
 
 
 # Salary Distribution of NYC
