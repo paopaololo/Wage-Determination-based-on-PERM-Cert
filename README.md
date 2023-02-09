@@ -1,4 +1,8 @@
 # Wage Determination based on The Permanent Labor Certification
+
+*updated 2/9/2023 to ver.3* 
+
+
 This is the code I used to predict the salaries using the "PERM Case" data published by the US Department Of Labour (DOL).
 This readme aims to give the reader a sense of:
 1. The background about the permanent labor certification
