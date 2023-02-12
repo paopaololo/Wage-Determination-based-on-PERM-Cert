@@ -2,12 +2,15 @@
 
 *updated on 2/9/2023 to ver.3* 
 
+![image](https://user-images.githubusercontent.com/107201347/216098246-399d5c2a-f182-4bc6-9648-500ac283b2ac.png)
+*(The map of salary distribution of NYC based on zip codes. Plotted with Folium.)*
 
 This is the code I used to predict the salaries using the "PERM Case" data published by the US Department Of Labour (DOL).
 This readme aims to give the reader a sense of:
 1. The background about the permanent labor certification
 2. The Gradient-boosted decision trees algorithms (xgboost)
 3. The Data Cleaning process
+4. Discussion about the accuracy of the prediction model
 
 # The Permanent Labor Certification
 
@@ -129,7 +132,7 @@ There are several categorical columns need to be enocded for the input of the
 
 Because there are certain hierachy with the columns, I encoded some of them manually.
 
-# Improvement and reflections
+# Discussion: Improvement and reflections
 
 The accuracy of the model is not good:
 
@@ -169,8 +172,5 @@ The fundamental solution to this is to expand the input data. However, there are
 My next step is to see if I can incoorprate other foreign work certifications data in the same year, like working visa H1B. 
 
 
-# Salary Distribution of NYC
 
-Folium library is used to plot a map of salary distribution of NYC based on zip codes:
-![image](https://user-images.githubusercontent.com/107201347/216098246-399d5c2a-f182-4bc6-9648-500ac283b2ac.png)
 
