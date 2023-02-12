@@ -153,11 +153,10 @@ I have the following proposal for improvements:
    - FOREIGN_WORKER_REQ_EXPERIENCE (whether the foreign worker has the experience as required for the requested job opportunity)
    - MINIMUM_EDUCATION (The minimum U.S. diploma or degree required by the employer for the position)
    - REQUIRED_EXPERIENCE_MONTHS (If experience in the job offered is required, the number of months required)
-2. Sort the SOC and the zip codes columns before encoding. If accuracy does not imrpove, use One Hot encoder.
 
 The improvement is still under work. It will be updated shortly.
 
-*update 2/4/2023
+*updated 2/4/2023
 
 I tried including 
    - FOREIGN_WORKER_REQ_EXPERIENCE (whether the foreign worker has the experience as required for the requested job opportunity)
