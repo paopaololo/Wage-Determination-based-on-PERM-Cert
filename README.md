@@ -143,8 +143,8 @@ For exmaple, if we consider Data Scientists data living in NYC:
 
 ![image](https://user-images.githubusercontent.com/107201347/218332954-ab7ce731-4d53-4786-9d1d-93565b893930.png)
 
-There are only 7 data entry for data scientists in the whole dataset. This is hardly going to produce any statistically significant parameters for predictions. 
-The model is making other features like education level and working cities to be the dominant factor, other than the job types for predictions. This is not an accurate way for salary determination. 
+There are only 7 data entries for data scientists in the whole dataset. This is hardly going to produce any statistically significant parameters for predictions. 
+The model is prioritizing other features like education level and working cities to be the dominant factor, other than the job types for predictions. This is not an accurate way for salary determination. 
 
 There are a few issues I can control when cleaning and looking through the data. 
 
