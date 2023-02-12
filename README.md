@@ -139,7 +139,7 @@ The accuracy of the model is not good:
 ![image](https://user-images.githubusercontent.com/107201347/216785821-e7f09aec-a73e-4d6f-a7ee-377cace1a1d7.png)
 
 The fundamental problem of the model is due to the small sample size. There are 97459 data entries in the dataset, but when we look at individual job types, the number can be potentially reduced to less than 10 entries.
-For exmaple, if we consider Data Scientists data living in NYC:
+For exmaple, if we consider Data Scientists living in NYC:
 
 ![image](https://user-images.githubusercontent.com/107201347/218332954-ab7ce731-4d53-4786-9d1d-93565b893930.png)
 
