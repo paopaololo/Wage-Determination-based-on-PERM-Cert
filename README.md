@@ -138,11 +138,15 @@ The accuracy of the model is not good:
 
 ![image](https://user-images.githubusercontent.com/107201347/216785821-e7f09aec-a73e-4d6f-a7ee-377cace1a1d7.png)
 
-There are a few issues I encountered when cleaning and looking through the data. 
+The fundamental problem of the model is due to the small sample size. If we consider Data Scientists data living in NYC:
+
+![image](https://user-images.githubusercontent.com/107201347/218332954-ab7ce731-4d53-4786-9d1d-93565b893930.png)
+
+
+There are a few issues I can control when cleaning and looking through the data. 
 
 1. isnull() sometimes cannot detect the NaN in the dataset. I have to transform the column to another column to force the empty values into NaN.
-2. LabelEncoder() works by encoding categories based on the listed order. I used it for SOC codes and zip codes. This might not be ideal as the algoirthm might derive flase correlation between different data. One Hot encoder will not work well here either, becuase there are up to thousands of categories. 
-3. There are other factors that drive the wage offer. I only incorporated a few factors
+2. There are other factors that drive the wage offer. I only incorporated a few factors.
 
 I have the following proposal for improvements:
 1. Include columns like:
