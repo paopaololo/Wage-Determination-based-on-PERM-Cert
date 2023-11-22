@@ -1,4 +1,4 @@
-# Wage Determination based on The Permanent Labor Certification
+# Wage Determination based on Permanent Labor Certification
 
 *updated on 2/9/2023 to ver.3* 
 
